@@ -1,10 +1,12 @@
 import { getBookedDatesByCabinId, getCabin } from "@/app/_lib/data-service";
+import { CabinInterface } from "@/app/_utils/pages_interface";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET( request: NextRequest, context: { params: { cabinid: string } } ) {
+export async function GET( request: NextRequest, context: { params: { cabinid: string } } ):
+    Promise<NextResponse<{ cabin: CabinInterface; bookedDates: Date[] }> | NextResponse<{ message: string }>> {
 
 
-    const { cabinid } = context.params;
+    const { cabinid } = await context.params;
     const cabinId = parseInt(cabinid);
 
     try {
