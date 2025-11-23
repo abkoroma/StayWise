@@ -7,8 +7,8 @@ import Image from "next/image";
 import { Suspense } from "react";
 
 
-export async function generateMetadata({ params }: { params: { cabinId: number } }) {
-    const cabinId = params.cabinId;
+export async function generateMetadata({ params }: { params: { cabinid: number } }) {
+    const cabinId = params.cabinid;
     const { name } = await getCabin(cabinId);
     return { title: `Cabin ${name}` };
 }

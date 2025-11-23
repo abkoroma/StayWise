@@ -1,8 +1,9 @@
 import { getBookedDatesByCabinId, getCabin } from "@/app/_lib/data-service";
 import { NextRequest } from "next/server";
 
-export async function GET( request: NextRequest, context: { params: { cabinId: number } } ): Promise<Response> {
+export async function GET( request: NextRequest, context: { params: { cabinId: number } } ) {
 
+    
     const { cabinId } = context.params;
 
     try {
