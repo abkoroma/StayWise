@@ -7,9 +7,10 @@ export async function GET( request: NextRequest, context: { params: { cabinid: s
 
 
     const { cabinid } = await context.params;
-    const cabinId = parseInt(cabinid);
+    //const cabinId = parseInt(cabinid);
 
     try {
+        const cabinId = parseInt(cabinid);
         const [cabin, bookedDates] = await Promise.all([
             getCabin(cabinId), getBookedDatesByCabinId(cabinId)
         ]);
