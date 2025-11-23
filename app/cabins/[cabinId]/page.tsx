@@ -23,8 +23,9 @@ export async function generateStaticParams() {
     return ids;
 }
 
-export default async function CabinRoute({ params }: { params: { cabinId: number } }) {
-    const cabin = await getCabin(params.cabinId);
+export default async function CabinRoute({ params }: { params: { cabinid: string } }) {
+    const cabinId = parseInt(params.cabinid);
+    const cabin = await getCabin(cabinId);
 
     const { name, max_capacity, image, description } = cabin;
     console.log(params);
