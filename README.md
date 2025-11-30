@@ -1,3 +1,60 @@
+# StayWise
+
+StayWise is a modern TypeScript-based web application focused on delivering a reliable, maintainable, and well-typed frontend experience. This README provides a comprehensive guide to the project: what it is, how to set it up locally, how to contribute, and how to deploy.
+
+> Note: This repository is primarily written in TypeScript (≈96.9%), with a small amount of CSS and JavaScript. The instructions below are intentionally framework-agnostic: if your project uses Next.js, Create React App, Vite, or another TypeScript-friendly scaffold, substitute the framework-specific commands where noted.
+
+Table of contents
+- About
+- Key features
+- Tech stack
+- Getting started
+  - Requirements
+  - Quick install
+  - Environment variables
+  - Running locally
+  - Building for production
+- Project structure
+- Scripts
+- Development utilities
+  - Linting & formatting
+  - Type checking
+  - Testing
+- Working with components and modules
+- API and configuration
+- Deployment
+- Troubleshooting
+- Roadmap
+- Contributing
+  - How to file issues and pull requests
+  - Code review checklist
+- License & attribution
+- Contact
+
+---
+
+About
+-----
+StayWise is a TypeScript-first frontend application aimed at delivering a robust and predictable developer experience. The app emphasizes type safety, modular components, and consistency in styling and tooling.
+
+Key features
+------------
+- TypeScript-driven codebase to reduce runtime errors
+- Component-based architecture for reusability and testability
+- Opinionated tooling: linting, formatting, and type checking integrated into the developer flow
+- Clear developer and contributor guidelines to streamline contributions
+
+Tech stack
+----------
+- Language: TypeScript (primary)
+- Styling: CSS (and/or CSS-in-JS depending on project conventions)
+- Build tools: (Next.js)
+- Testing: (React Testing Library)
+- Linting & formatting: ESLint, Prettier
+- Package manager: npm
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
