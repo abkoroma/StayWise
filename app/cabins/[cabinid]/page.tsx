@@ -8,11 +8,9 @@ import { Suspense } from "react";
 
 
 export async function generateMetadata({ params }: { params: { cabinid: string } }) {
-    const { cabinid } = await params;
-
-    const cabinId = parseInt(cabinid, 10);
-    const { name } = await getCabin(cabinId);
-    return { title: `Cabin ${name}` };
+    const cabinId = parseInt(params.cabinid, 10);
+    
+    return { title: `Cabin ${cabinId}` };
 }
 
 export async function generateStaticParams() {
