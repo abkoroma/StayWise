@@ -12,12 +12,12 @@
     "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.57.4",
     "date-fns": "^4.1.0",
-    "next": "15.5.0",
+    "next": "16.1.6",
     "next-auth": "^5.0.0-beta.29",
     "postcss": "^8.5.6",
-    "react": "19.1.0",
+    "react": "19.2.4",
     "react-day-picker": "^9.11.1",
-    "react-dom": "19.1.0",
+    "react-dom": "19.2.4",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
@@ -25,11 +25,15 @@
     "tailwindcss": "^4.1.17",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "autoprefixer": "^10.4.22",
     "eslint": "^9",
-    "eslint-config-next": "15.5.0",
+    "eslint-config-next": "16.1.6",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
