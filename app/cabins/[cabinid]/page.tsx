@@ -8,7 +8,9 @@ import { Suspense } from "react";
 
 
 export async function generateMetadata({ params }: { params: { cabinid: string } }) {
-    const cabinId = parseInt(params.cabinid);
+    const { cabinid } = await params;
+
+    const cabinId = parseInt(cabinid, 10);
     const { name } = await getCabin(cabinId);
     return { title: `Cabin ${name}` };
 }
@@ -23,11 +25,12 @@ export async function generateStaticParams() {
 }
 
 export default async function CabinRoute({ params }: { params: { cabinid: string } }) {
-    const cabinId = parseInt(params.cabinid);
+    const { cabinid } = await params;
+
+    const cabinId = parseInt(cabinid, 10);
     const cabin = await getCabin(cabinId);
 
     const { name, max_capacity, image, description } = cabin;
-    console.log(params);
 
     return (
         <div className="max-w-6xl mx-auto mt-8">
