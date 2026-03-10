@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 
 
-export async function generateMetadata({ params }: { params: { cabinid: string } }) {
+/*export async function generateMetadata({ params }: { params: { cabinid: string } }) {
     const cabinId = parseInt(params.cabinid, 10);
     
     return { title: `Cabin ${cabinId}` };
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
     }));
 
     return ids;
-}
+}*/
 
 export default async function CabinRoute({ params }: { params: { cabinid: string } }) {
     const { cabinid } = await params;
